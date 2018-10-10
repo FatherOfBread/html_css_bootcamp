@@ -1,0 +1,127 @@
+/* ~~~~~~~ALIGN MENU AND MAIN PAGE~~~~~~~~ */
+body {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    margin: 0px;
+}
+
+/* ~~~~~~~~MENU BAR~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.menuBar {
+    width: 150vw;
+    margin: 5px;
+    padding: 5px 30px 5px 20px;
+    border: 1px solid rgb(90, 90, 90);
+    background-color: rgb(99, 99, 99);
+    box-shadow: 3px 3px 10px grey;
+    color: white;
+    text-align: center;
+    font-family: helvetica;
+}
+
+/* Style Search bar */
+.searchBar input {
+    width: 100%;
+    background-color: rgba(99, 99, 99,0);
+    padding: 5px;
+    color: white;
+}
+
+.searchBar ::placeholder {
+    color: lightgrey;
+}
+
+ul.navLinks {
+    padding: 0px;
+    text-align: left;
+}
+
+/* Style the links inside the menu bar */
+ul.navLinks li{
+    list-style: none;
+    padding: 10px 0px;
+}
+
+ul.navLinks a {
+    color: grey;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: lightgrey;
+}
+
+/* Change the color of links on hover */
+.navLinks a:hover {
+    color: white;
+}
+
+.copyright {
+    color: lightgrey;
+    font-size: 10px;
+    position: absolute;
+    top: 96%;
+    left: 6%;
+}
+
+/* ~~~~~~~~MAIN PAGE~~~~~~~~~~~~~~~~~~~~~~~ */
+main {
+    overflow: auto;
+    /* flex-grow: 90; */
+    padding: 30px 120px 30px 30px;
+}
+
+.mainHeader :not(p) {
+    display: inline-block;
+    margin: 0px;
+    font-family: 'Calibri';
+}
+
+.mainHeader>p{
+    margin: 5px 0px;
+}
+
+main>p {
+    font-size: 12px;
+    font-family: arial;
+}
+
+main>h3 {
+    font-size: 12px;
+    font-family: 'Arial Narrow';
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* Style Quotation */
+.quotation {
+    border-left: 5px solid lightgrey;
+    background-color: rgb(231, 231, 231);
+    color: grey;
+    font-size: 16px;
+    font-style: italic;
+    text-align: center;
+    margin: 20px 0px;
+    padding: 5px 20px;
+}
+
+.quotation *{
+    margin: 0px;
+}
+
+.quotation>.signature {
+    text-align: right;
+}
+
+.quotation h1:first-of-type {
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.quotation h1:last-of-type {
+    text-align: right;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
